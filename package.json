@@ -1,0 +1,30 @@
+{
+  "name": "seamless-test",
+  "version": "1.0.0",
+  "description": "Seamless.ai Test App",
+  "main": "api.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "nodemon api.js",
+    "test": "standard",
+    "open": "concurrently \"open client/index.html\"",
+    "start": "npm run open && npm run dev"
+  },
+  "author": "Adam Jones",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "async": "2.5.0",
+    "axios": "0.17.0",
+    "body-parser": "1.18.2",
+    "dotenv": "4.0.0",
+    "express": "4.16.2",
+    "mongoose": "4.12.4"
+  },
+  "devDependencies": {
+    "concurrently": "3.5.0",
+    "nodemon": "1.12.1",
+    "standard": "10.0.3"
+  }
+}
